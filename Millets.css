@@ -1,0 +1,97 @@
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .image{
+    border:5px solid greenyellow;
+    width:350px;
+    border-radius: 25px;
+  }
+  .column {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+.Ragi {
+
+    display: block;
+    width: 400px;
+    height: 400px;
+    margin-top: 1px;
+
+
+}
+.title {
+    font-size:30px;
+    padding-left: 100px;
+    padding-top: 10px;
+
+}
+.Malt {
+    background-color:white;
+    text-align: center;
+    animation: slideInFromRight 1s ease-in-out;
+
+}
+.energy {
+    font-size: 20px;
+    background-color:white;
+    margin-top:50px;
+}
+
+
+body {
+    background-color:antiquewhite;
+    margin-bottom: 10px;
+    padding-bottom: 500px;
+}
+.strength {
+    font-size: 20px;
+    margin-bottom: 10px;
+    background-color: white;
+
+
+}
+.quality {
+    font-size: 20px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+.container {
+
+    font-size: 20px;
+    padding-top: 5px;
+    
+}
+
+.h2 {
+    margin-top: 0%;
+}
+
+
+
+.container input[type="number"] {
+    width: 40px; 
+    height: 30px; 
+}
+
+
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Farm's</title>
+    <link rel="stylesheet" href="Millets.css">
+    <link rel="stylesheet" href="Navbar.css">
+</head>
+    <body>
+        
+<div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="benifits.html">Benifits</a>
+    <a href="Contact.html">Contact</a>
+    <a href="about.html">About</a>
+    <a href="location.html">Location</a>
+  </div>
+
+
+        <h1 class="title">రుషి రాగి మాల్ట్  </h1>
+
+        <div class="container">
+            <div class="column">
+                <img class="image" src="Millets.jpg" class="Ragi myImageClass">
+
+            </div>
+            <div class="column">
+                <strong>పదార్థాలు</strong>
+                <p>మొలకెత్తిన రాగులు, సజ్జలు, పెసర్లు, జొన్నలు, గోధుమలు, శనిగలు, మొక్కజొన్నలు దినుసులు సోయాబిన్, బార్లీ, కొర్రలు, బియ్యం, సాబుధన్, బాదం, కాజు, యాలకులు మొదలగునవి తగు పాళ్ళల్లో కలపడమైనది.</p>
+            </div>
+            <div class="column"> <strong>తయారు చేయు విధానము:</strong>
+                <p>
+
+                    ఒక గ్లాసు నీరు తీసుకొని అందులో 1/4 భాగములో 2 చెంచలు రాగి మాల్ట్ కలిపి పేస్ట్గా చేయాలి. మిగిలిన నీళ్ళను స్టౌపైన ఉంచి వేడెక్కిన తరువాత కలపిన రాగి మాల్ట్ను అందులో పోసి మీ రుచికి తగినంత బెల్లం కలిపి మరగనివ్వాలి.
+                    
+                    షుగర్ ఉన్నవారు చక్కెర/తేనె కలపకుండా త్రాగండి.
+                    
+                    ::- ఒక్కొక్కరికి 2 స్పూన్ల పిండిని నీటితో 5 ని||లు ఉడికించి తగినంత మజ్జిగన కలుపుకొని త్రాగాలి.
+                    
+                    ::- ఇందులో తీసుకోబడిన మొలకలు, దినుసుల కారణంగా మన శరీరంలోని అనేక సమస్యలను నివారించి, శరీరానికి బలాన్ని చేకూర్చుతుంది.<Br><Br>
+                    
+                    Net Weight: 500 gms
+                    
+                    MRP: 130
+                    
+                    Pkd On:
+                    
+                    Best Before use 4 Months from the date of Mfg.
+                    
+                    Best for Children, Sugar Patients, Pregnants & Entire Family
+                    
+                    Manufactured by: RISHI RAGI MA</p>
+
+            </div>
+            
+          </div>
+
+          <div style="margin-top:200px" ></div>
+          
+          <section id="benifits" >
+            <div style="margin:200px" ></div>
+    <h1 class="Malt">రాగి మాల్ట్ యొక్క ప్రయోజనాలు    </h1>
+    <P class="energy"><span style="color: rgb(97, 61, 130);font-weight: bold;">Holistic Breakfast Food</span>
+        Ragi comprises a vast array of key nutrients like vitamin C, vitamin E, B-complex vitamins, iron, calcium, antioxidants, proteins, fibers, sufficient calories and useful unsaturated fats. Following a deep sleep at night, the stomach and intestines display peak levels of metabolism in the morning. Hence, having ragi-based foods like ragi upma or ragi parathas for breakfast activates the digestive juices and ensures complete assimilation of nutrients found in ragi, which are absorbed into the bloodstream and transferred to vital organs in the body namely the heart, brain, lungs, liver and kidneys.</P><Br>
+          
+            <p class="strength"><span style="color: rgb(98, 65, 130);font-weight: bold;">Supplies Essential Amino Acids</span> Essential Amino Acids
+    Ragi is composed of certain key amino acids, making it a unique plant-based source of high-quality proteins. It offers methionine, a sulphur-based amino acid to revive skin and hair health, valine and isoleucine which repair injured muscle tissues and threonine, to enable the proper formation of teeth and enamel and protect the mouth from gum disease.</p><br>
+
+<p class="quality"><span style="color: rgb(93, 72, 112);font-weight: bold;">Supplies Essential Amino Acids</span> A Gluten-Free Diet
+    A significant number of young adults and older people tend to develop intolerance towards the gluten proteins in cereals like wheat, which, unfortunately, is a regular ingredient in Indian dishes. Ragi, being organically gluten-free, can easily be substituted for wheat, to prepare chapatis, dosas and sweets or mithais, and is often recommended for patients with celiac disease.
+    
+    It is important to keep in mind though, that the best time to consume ragi is in the morning, for being fiber-rich, its digestive process is more elaborate and it is usually not okay to eat ragi at night, especially for those with digestive problems and gluten allergies.</p>
+</section>
+
+
+    <div class="container">
+        <h2>Rushi Ragi Malt Prices</h2><br><br>
+          <label class="tree"> Ragi Millets 500Grm : </label>
+        <input type="number" id="tree" min="0"><br><br>
+
+        
+        <label class="grass"> Ragi Millets 1000Grm : </label>
+        <input type="number" id="grass" min="0"><br><br>
+
+
+        <button onclick="calculateTotal()">Total cart value</button><br><br>
+        <div id="totalCost"></div>
+    </div>
+
+    <script>
+        function calculateTotal() {
+    var PriceRagiMillets500Grmprice = 30;
+    var PriceRagiMillets1000Grmprice = 50;
+
+    var RagiMillets500Grmcount = parseInt(document.getElementById('tree').value) || 0;
+    var RagiMillets1000Grmcount = parseInt(document.getElementById('grass').value) || 0;
+
+    var totalCost = (RagiMillets500Grmcount * PriceRagiMillets500Grmprice) + (RagiMillets1000Grmcount * PriceRagiMillets1000Grmprice);
+
+    document.getElementById('totalCost').innerHTML = "Total Cost: Rs " + totalCost;
+    alert("Total Cost: Rs " + totalCost);
+}
+
+    </script>
+
+</head>
+
+</body>
+</html>
